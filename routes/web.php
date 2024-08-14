@@ -10,6 +10,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/child', function () {
+    return view('child', ['name' => 'lili']);
+});
+
 //登入使用 laravel 提供
 
 //創建首頁 blog index route
