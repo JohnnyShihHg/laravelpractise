@@ -6,12 +6,12 @@ use App\Http\Controllers\BlogIndexController;
 use App\Http\Controllers\BlogUserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/wel', function () {
     return view('welcome');
 });
 
-Route::get('/child', function () {
-    return view('child', ['name' => 'lili']);
+Route::get('/test', function () {
+    return view('test');
 });
 
 //登入使用 laravel 提供
